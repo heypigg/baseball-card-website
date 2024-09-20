@@ -14,10 +14,10 @@ create_table_new.py
 list table
 read_excel_import_dynamo
 add gsi to dynamo
-run script for new backend api
+run script for new backend api -  change port to 5001 as 5000 is used by MAC
+http://localhost:3000/
 
-
-
+http://localhost:3000/api/cards
 
 
 for data persistence:
