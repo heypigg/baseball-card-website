@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erik's Baseball Card Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Erik's Baseball Card Website</h1>
+    </header>
+    
+    <section id="about">
+        <h2>Erik's Baseball Card Collection</h2>
+        <p>Check out my junk wax era collection!</p>
+    </section>
+
+    <section id="gallery">
+        <h2>My Collection</h2>
+        <div id="image-container">
+            <!-- Images or other content will go here -->
+        </div>
+    </section>
+
+    <!-- Add a search form -->
+    <section id="search">
+        <form id="search-form">
+            <input type="text" id="player-name" placeholder="Enter Player Name" />
+            <input type="text" id="card-number" placeholder="Enter Card Number" />
+            
+            <label>
+              <input type="radio" name="search-type" value="player" checked> Search by Player Name
+            </label>
+            <label>
+              <input type="radio" name="search-type" value="cardnumber"> Search by Card Number
+            </label>
+          
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <!-- Display card details and provide an update form for Quantity, Quality, Base Card, and Parallel -->
+    <section id="card-details">
+        <h2>Card Details</h2>
+        <div id="card-info"></div>
+        <form id="update-form" style="display:none;">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+            <label for="quality">Quality:</label>
+            <input type="text" id="quality" name="quality" required>
+            <label for="base-card">Base Card:</label>
+            <input type="text" id="base-card" name="base-card" required>
+            <label for="parallel">Parallel:</label>
+            <input type="text" id="parallel" name="parallel" required>
+            <button type="submit">Update</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Erik's Baseball Card Website</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
